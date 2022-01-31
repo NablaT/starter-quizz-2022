@@ -10,7 +10,7 @@ Note, for those using linux, you can find instruction to install NodeJS [here](h
 
 Click on the fork button on the page of the repository on github to create your own copy of the starter.
 
-2) Clone your repository, your fork
+3) Clone your repository, your fork
 
 ```
 git clone https://github.com/YOUR_USERNAME/starter-quiz-two.git
@@ -26,7 +26,7 @@ npm install
 
 If you have an error saying that npm is not a known command, it means that NodeJS is not installed. 
 
-4) Install angular/cli
+5) Install angular/cli
 
 ```
 npm install -g @angular/cli
