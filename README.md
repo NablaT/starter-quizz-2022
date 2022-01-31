@@ -13,12 +13,12 @@ Click on the fork button on the page of the repository on github to create your 
 3) Clone your repository, your fork
 
 ```
-git clone https://github.com/YOUR_USERNAME/starter-quiz-two.git
+git clone https://github.com/YOUR_USERNAME/starter-quiz-2022.git
 ```
 
 4) Install the dependencies
 
-Open command prompt inside the repository (starter-quiz-two) and run: 
+Open command prompt inside the repository (starter-quiz-2022) and run: 
 
 ```
 npm install
@@ -43,11 +43,38 @@ You can also use the command `ng serve` to start the app and also `ng serve --op
 
 ## Run the linter
 
+The linter is a tool which automatically detects static code issues (such as unused imports or variables, trailing whitespaces etc...).
+
+To run it: 
+
 ```
 npm run lint
 ```
 
-Note: The linter will be executed before each commit. If the linter fails then the commit will be canceled.
+If you get an error saying that `Missing script: "lint"`, then you can run : `ng lint`. Then, you should be able to run the linter. 
+Note: for this project, we will disable a rule from the default linter, edit your `.eslintrc.json` to disable the rule `"@angular-eslint/no-empty-lifecycle-method": "off"`, edit the `"rules"` array as follow: 
+
+```
+ "rules": {
+        "@angular-eslint/no-empty-lifecycle-method": "off",
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ]
+      }
+```
 
 Several issues from the linter can be fixed automatically (for instance: trailing whitespace, missing new line etc...) thanks to the following command:
 ```
