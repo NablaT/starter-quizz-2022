@@ -2,7 +2,7 @@
     {
         "name": "Les Acteurs",
         "theme": "Actor",
-        "id": "1",
+        "id": 1,
         "questions": [
             {
                 "label": "Jean Gabin a joué dans...",
@@ -22,7 +22,7 @@
     {
         "name": "Les sports",
         "theme": "Sport",
-        "id": "2",
+        "id": 2,
         "questions": [
             {
                 "label": "Aux echecs, Magnus Carlsen est champion du monde depuis...",
@@ -50,7 +50,7 @@
     {
         "name": "Les memes",
         "theme": "Fun",
-        "id": "3",
+        "id": 3,
         "questions": [
             {
                 "label": "Completez cette phrase: Hide the Pain...",
